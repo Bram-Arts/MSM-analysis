@@ -47,7 +47,7 @@ def alias_parser(alias: str) -> list:
     group_indicators = list(filereader.groups["group name"])
     full_monster_set = set()
     for group in group_indicators:
-        full_monster_set = set.union(full_monster_set, set(*filereader.get_group(group)))
+        full_monster_set = set.union(full_monster_set, set(filereader.get_group(group)))
     # Do aliases
     selected_monsters = full_monster_set.copy()
     # Groups: have a groups file
@@ -59,7 +59,7 @@ def alias_parser(alias: str) -> list:
     else:
         for group in group_indicators:
             if group in alias_parts:
-                selected_monsters.intersection_update(set(*filereader.get_group(group)))
+                selected_monsters.intersection_update(set(filereader.get_group(group)))
     # Do element counts
     for count, amount in count_indicators.items():
         if count in alias_parts:
@@ -126,7 +126,7 @@ def constant_torches(df: pd.DataFrame, torch_amount: int | None = None) -> pd.Da
     else:
         counts = df["Torches Lit"].value_counts()
         largest_amount = counts.index[0]
-        print("Most data found with {} torches: there's {} observations".format(largest_amount, counts.iloc[0]))
+        print("Most data found with {} torches: there's {} observations".format(int(largest_amount), counts.iloc[0]))
         return df[df["Torches Lit"] == largest_amount]
 
 def constant_levels(df: pd.DataFrame, level1: int | None = None, level2: int | None = None) -> pd.DataFrame:

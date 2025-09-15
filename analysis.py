@@ -26,5 +26,7 @@ def confidence_interval(df: pd.DataFrame, success: str | list, confidence: float
         if row["Result Monster"] in success:
             k+=1
     n = df.shape[0] # number of measurements
-    print(n, "     ", k)
-    return stats.beta.interval(confidence, k+1, n-k+1)
+    print("{} datapoints have {} successes in total".format(n, k))
+    interval = stats.beta.interval(confidence, k+1, n-k+1)
+    print("That's a {}% confidence interval of between {:.4f} and {:.4f}".format(int(confidence*100), interval[0], interval[1]))
+    return interval

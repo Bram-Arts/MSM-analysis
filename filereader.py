@@ -117,9 +117,21 @@ def read_existing_rares():
     lines = remove_comments(commented)
     return [line.rstrip("\n") for line in lines]
 
+def read_groups():
+    df = pd.read_csv("groups.csv")
+    listed = []
+    for _, row in df.iterrows():
+        listed.append(row["monsters"].split(','))
+    df["monsters"] = listed
+    return df
+
 elements, reverse_elements = read_elements()
 specials = read_specials()
 existing_rares = read_existing_rares()
+groups = read_groups()
+
+def get_group(groupname: str) -> list:
+    return list(groups[groups["group name"] == groupname]["monsters"])[0]
 
 def build_monster_list(remaining_elements):
     if len(remaining_elements) == 1:
@@ -132,6 +144,7 @@ def build_monster_list(remaining_elements):
             all_combinations.append(combination)
             all_combinations.append([current_element] + combination)
         return all_combinations
+
 
 
 # Import availability data
@@ -321,6 +334,12 @@ def read_data(
     # print(df)
 
     df.to_csv('msm_data.csv', index=False)
+    return df
+
+def read_from_csv():
+    df = pd.read_csv("msm_data.csv")
+    df["Date (MSM time) (MM/DD/YYYY)"] = pd.to_datetime(df["Date (MSM time) (MM/DD/YYYY)"])
+    df["Torches Lit"] = pd.to_numeric(df["Torches Lit"])
     return df
 
 if __name__ == "__main__":
