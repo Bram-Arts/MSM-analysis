@@ -20,7 +20,7 @@ ethereal_pairo={
 }
 
 natural_singles = ["Noggin", "Toe Jammer", "Mammott", "Potbelly", "Tweedle"]
-pairos = ["Hairionette", "Owlesque", "Arcorina"]
+pairos = filereader.get_group("Paironormals")
 ethereal_elements = ["Pl", "Sh", "Me", "Cr", "Po"]
 
 def possible_results(datapoint): 
