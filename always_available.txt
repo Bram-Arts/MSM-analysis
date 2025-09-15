@@ -1,0 +1,45 @@
+%
+Monsters that are always available on an island to breed.
+These are either declared with a name or with a 1 or 2 letter contraction of their elements.
+Limited monsters are in the file availabilities.txt.
+Paironormals are in neither, they get a special treatment in the code.
+Mirror islands do not need separate entries.
+
+Example:
+Plant~P,E,C,W,Shugabush,Ghazt,G'joob
+
+Available elements:
+P - Plant
+C - Cold
+A - Air
+W - Water
+E - Earth
+F - Fire
+
+Li - Light
+Ps - Psychic
+Fa - Faerie
+Bo - Bone
+
+Pl - Plasma
+Sh - Shadow
+Me - Mech
+Cr - Cystal
+Po - Poison
+%
+Plant~P,E,C,W,Shugabush,Ghazt,G'joob
+Cold~P,C,W,A,Grumpyre,Strombonin
+Air~E,W,C,A,Reebro,Yawstrich
+Water~E,W,P,A,Jeeode,Anglow
+Earth~E,P,C,A,Humbug,Hyehehe
+Haven~E,F,P,A,Buzzinga
+Oasis~F,A,C,W,Cherubble
+Light~Li,F,P,C
+Psychic~Ps,F,W,P
+Faerie~Fa,E,C,F
+Bone~Bo,F,E,W
+Ethereal~Pl,Sh,Me,Cr,Po
+Sanctum~Bo,Li,Ps,Fa
+Shugabush~PomPom,Potbelly,Mammott,Quibble,Oaktopus,Furcorn,Deedge,Shugabush,Shugabass,Shugitar,Shugajo,Shugarock,Shugabuzz,Shugabeats,Shugavox
+Mythical~Cataliszt,Yawstrich,G'day,Strombonin,Cherubble,Hyehehe,Buzzinga,Sporerow,Bleatnik,Cranchee,shLep,Wheezel,Pinghound,Knurv
+Shanty~Punkleton,Yool,Schmoochle,Blabbit,Hoola,Gobbleygourd,Clavavera,Viveine,Jam Boree,Carillong,Whiz-bang,Monculus,Ffidyll,Boo'qwurm,Spurrit

@@ -1,0 +1,133 @@
+%
+The elements of monsters.
+Used when determining possible results from a "normal" breeding attempt where the elements of the parents come into play.
+Rares do not need separate entries.
+All monsters of which the elements are not important for breeding (e.g. seasonal, mythical) are not entered in this file.
+Available elements:
+P - Plant
+C - Cold
+A - Air
+W - Water
+E - Earth
+F - Fire
+
+Li - Light
+Ps - Psychic
+Fa - Faerie
+Bo - Bone
+
+Pl - Plasma
+Sh - Shadow
+Me - Mech
+Cr - Cystal
+Po - Poison
+
+Note monsters one on each line like this:
+Fwog~W,E
+%
+Noggin~E
+Toe Jammer~W
+Mammott~C
+Potbelly~P
+Tweedle~A
+Fwog~W,E
+Drumpler~E,C
+Maw~W,C
+Shrubb~P,E
+Oaktopus~P,W
+Furcorn~P,C
+Dandidoo~P,A
+Quibble~W,A
+Pango~C,A
+Cybop~E,A
+T-Rox~E,W,C
+Bowgart~W,P,C
+Pummel~W,E,P
+Clamble~P,C,E
+Congle~W,C,A
+Spunge~W,P,A
+Thumpies~P,C,A
+Scups~W,E,A
+PomPom~E,C,A
+Reedling~E,P,A
+Entbrat~P,E,W,C
+Deedge~C,W,A,P
+Riff~E,A,C,W
+Shellbeat~W,P,E,A
+Quarrister~E,P,A,C
+Kayna~F
+Flowah~F,P
+Glowl~F,A
+Stogg~F,E
+Boskus~F,C
+Phangler~F,W
+Floogull~F,A,E
+Woolabee~F,A,C
+Barrb~F,P,A
+Repatillo~F,P,E
+Wynq~F,C,W
+Whaddle~F,W,A
+Sooza~F,P,C
+Rootitoot~F,P,W
+Ziggurab~F,C,E
+Thrumble~F,E,W
+Tring~F,A,E,P
+Sneyser~F,A,C,W
+Fluoress~Li
+Bulbo~Li,C
+Gob~Li,P
+Pluckbill~Li,F
+TooToo~Li,F,P
+Spytrap~Li,C,P
+Fiddlement~Li,F,C
+Blow't~Li,F,P,C
+Theremind~Ps
+Bonkers~Ps,P
+Poppette~Ps,W
+Yuggler~Ps,F
+Tapricorn~Ps,W,P
+Rooba~Ps,F,P
+Periscorp~Ps,F,W
+Gloptic~Ps,F,W,P
+Floot Fly~Fa
+Squot~Fa,C
+HippityHop~Fa,E
+Wimmzies~Fa,F
+Cantorell~Fa,E,C
+Bridg-it~Fa,E,F
+Clavi Gnat~Fa,C,F
+Pladdie~Fa,F,C,E
+Clackula~Bo
+Denchuhs~Bo,W
+Peckidna~Bo,E
+Hawlo~Bo,F
+Withur~Bo,W,E
+Uuduk~Bo,F,E
+Banjaw~Bo,F,W
+Plinkajou~Bo,F,E,W
+Ghazt~Pl
+Grumpyre~Sh
+Reebro~Me
+Jeeode~Cr
+Humbug~Po
+Whisp~Pl,Sh
+Nebulob~Pl,Me
+Sox~Pl,Cr
+Jellbilly~Pl,Po
+Arackulele~Sh,Me
+Boodoo~Sh,Cr
+Kazilleon~Sh,Po
+Bellowfish~Me,Cr
+Dragong~Me,Po
+Fung Pray~Cr,Po
+Xyster~Ps,Bo
+Cahoot~Ps,Li
+Déjà-Jin~Ps,Fa
+Roarick~Bo,Li
+Osstax~Bo,Fa
+Knucklehead~Li,Fa
+G'day~Ps,Bo,Li
+Larvaluss~Ps,Bo,Fa
+Frondley~Ps,Li,Fa
+Mushaboom~Bo,Li,Fa
+Enchantling~Ps,Bo,Li,Fa
